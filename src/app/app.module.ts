@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { JumbtronComponent } from './components/jumbtron/jumbtron.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
     declarations: [
@@ -18,22 +19,7 @@ import { HomeComponent } from './components/pages/home/home.component';
     ],
     imports: [
     BrowserModule,
-
-    RouterModule.forRoot([
-    {
-        path: 'home',
-        component: HomeComponent
-    },
-    {
-        path: 'about',
-        component: AboutComponent
-    },
-    {
-        path: '',
-        redirectTo: '/home',
-        pathMatch:'full'
-    }
-    ])
+    AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]
