@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 
 @Component({
 	selector: 'app-jumbtron',
@@ -6,11 +6,10 @@ import { Component, OnInit } from '@angular/core';
 	styleUrls: ['./jumbtron.component.css']
 })
 export class JumbtronComponent implements OnInit {
-
-	private heading:string;
-	private text:string;
-	private buttonText:string;
-	private buttonUrl:string;
+	heading: string;
+	text: string;
+	buttonText: string;
+	buttonUrl: string;
 	constructor() { }
 
 	ngOnInit() {

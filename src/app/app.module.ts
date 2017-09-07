@@ -8,6 +8,7 @@ import { JumbtronComponent } from './components/jumbtron/jumbtron.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AppRoutingModule }     from './app-routing.module';
+import { GithubViewerComponent } from './components/github-viewer/github-viewer.component'
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import { AppRoutingModule }     from './app-routing.module';
     NavbarComponent,
     JumbtronComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    GithubViewerComponent
     ],
     imports: [
     BrowserModule,
