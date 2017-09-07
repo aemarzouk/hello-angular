@@ -9,11 +9,17 @@ import "rxjs/add/operator/map"
 export class GithubViewerComponent implements OnInit {
 
   user = false;
+  repos = [];
 
   constructor( private githubService: GithubService) {
     this.githubService.getUserProfile().subscribe(user => {
       console.log(user);
       this.user = user;
+    })
+
+    this.githubService.getUserRepos().subscribe(repos => {
+      console.log(repos);
+      this.repos = repos;
     })
    }
 

@@ -13,4 +13,8 @@ export class GithubService {
   getUserProfile(){
     return this.http.get('http://api.github.com/users/' + this.username).map(res => res.json());
   }
+
+  getUserRepos(){
+    return this.http.get('http://api.github.com/users/' + this.username + '/repos').map(res => res.json());
+  }
 }

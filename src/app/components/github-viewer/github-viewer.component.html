@@ -52,6 +52,25 @@
         </div>
       </div>
 
+
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Repositories</h3>
+          </div>
+          <div class="panel-body">
+
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let repo of repos">
+                <span class="badge progress-bar-warning">{{repo.watchers}} Watchers</span>
+                <span class="badge progress-bar-success">{{repo.forks}} Forks</span>
+                <h4><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></h4>
+                <p>{{repo.description}}</p>
+              </li>
+            </ul>
+
+          </div>
+      </div>
+
     </div>
   </div>
 
