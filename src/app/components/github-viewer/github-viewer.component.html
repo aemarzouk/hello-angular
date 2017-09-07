@@ -1,3 +1,25 @@
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <form action="" method="POST" role="form" name="username-form">
+
+        <div class="form-group">
+          <label for="">Github Username</label>
+          <input type="text" class="form-control" id=""
+           placeholder="Github username" [(ngModel)]="username" name="input-username"
+           (keyup)="updateUserInfo()" >
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+</div>
+
+
 <div class="container" *ngIf="user">
   <div class="row">
     <div class="col-md-8 col-md-offset-2">

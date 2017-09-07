@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../../services/github/github.service';
 import "rxjs/add/operator/map"
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-github-viewer',
@@ -10,8 +11,11 @@ export class GithubViewerComponent implements OnInit {
 
   user = false;
   repos = [];
+  username: string;
 
-  constructor( private githubService: GithubService) {
+  updateUserInfo(){
+    this.githubService.updateUsername(this.username);
+
     this.githubService.getUserProfile().subscribe(user => {
       console.log(user);
       this.user = user;
@@ -21,6 +25,10 @@ export class GithubViewerComponent implements OnInit {
       console.log(repos);
       this.repos = repos;
     })
+  }
+
+  constructor( private githubService: GithubService) {
+
    }
 
   ngOnInit() {
