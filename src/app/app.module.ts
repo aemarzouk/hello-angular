@@ -9,6 +9,7 @@ import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AppRoutingModule }     from './app-routing.module';
 import { GithubViewerComponent } from './components/github-viewer/github-viewer.component'
+import { GithubService } from "./services/github/github.service";
 
 @NgModule({
     declarations: [
@@ -23,7 +24,7 @@ import { GithubViewerComponent } from './components/github-viewer/github-viewer.
     BrowserModule,
     AppRoutingModule
     ],
-    providers: [],
+    providers: [GithubService],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
