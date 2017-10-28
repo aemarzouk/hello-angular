@@ -1,6 +1,6 @@
 # Hello-Angular
 
-<img src="docs/images/angular.svg" width="100px"/><img src="docs/images/TypeScript-svg.svg" width="100px"/>   <img src="docs/images/Npm-logo.svg.png" width="100px"/>
+<img src="docs/images/angular.png" width="100px"/><img src="docs/images/Npm-logo.svg.png" width="100px"/> <img src="docs/images/TypeScript-svg.svg" width="100px"/>
 
 This is a Hello World I created while learning Angular 4. It can be as a quick start guide for how to build Angular applications by following the commits from start to end.
 
